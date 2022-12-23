@@ -14,7 +14,7 @@ public class Demo {
         List<Patient> patientList = new ArrayList<Patient>();
 
         // toString method to print the created object
-        Patient patient = new Patient( 10,  "dave", 18,  "heart attack");
+        Patient patient = new Patient( 10,  "dave", 18,  "heart attack", "Dacy", 17);
         patientList.add(patient);
 
         System.out.println(gson.toJson(patientList));
