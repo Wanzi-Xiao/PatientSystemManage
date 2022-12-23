@@ -1,4 +1,5 @@
 spring:
+
   datasource:
     # jdbc
     username: patient_system

@@ -28,7 +28,6 @@ CREATE TABLE `patient` (
   `age` int(11) NOT NULL,
   `disease` varchar(255) NOT NULL,
   `doctor` varchar(255) NOT NULL,
-  `doctorID` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -39,7 +38,7 @@ CREATE TABLE `patient` (
 
 LOCK TABLES `patient` WRITE;
 /*!40000 ALTER TABLE `patient` DISABLE KEYS */;
-INSERT INTO `patient` VALUES (1,'Jack',18,'Asthma','Bob',35),(2,'Amy',19,'Pneumonia','David',20),(3,'Cellie',35,'Bronchitis','Tesha',50),(4,'Joshua',55,'Cardiomyopathy','Cameron',12),(5,'Mason',63,'Diabetes','Cameron',27),(6,'Mason',63,'hypertension','Cameron',27),(7,'Sophia',23,'influenza','Lily',52),(8,'Ella',23,'influenza','Sean',22),(9,'Owen',15,'fracture','Mia',4),(10,'Chloe',22,'color blindness','Daniel',10);
+INSERT INTO `patient` VALUES (1,'Jack',18,'Asthma','Bob'),(2,'Amy',19,'Pneumonia','David'),(3,'Cellie',35,'Bronchitis','Tesha'),(4,'Joshua',55,'Cardiomyopathy','Cameron'),(5,'Mason',63,'Diabetes','Cameron'),(6,'Mason',63,'hypertension','Cameron'),(7,'Sophia',23,'influenza','Lily'),(8,'Ella',23,'influenza','Sean'),(9,'Owen',15,'fracture','Mia'),(10,'Chloe',22,'color blindness','Daniel');
 /*!40000 ALTER TABLE `patient` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

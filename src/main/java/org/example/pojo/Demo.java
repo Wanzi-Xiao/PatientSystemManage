@@ -1,8 +1,7 @@
-package org.example;
+package org.example.pojo;
 
 import com.google.gson.Gson;
 import java.util.List;
-
 import java.util.ArrayList;
 
 public class Demo {
@@ -14,7 +13,7 @@ public class Demo {
         List<Patient> patientList = new ArrayList<Patient>();
 
         // toString method to print the created object
-        Patient patient = new Patient( 10,  "dave", 18,  "heart attack", "Dacy", 17);
+        Patient patient = new Patient( 10,  "dave", 18,  "heart attack", "Dacy");
         patientList.add(patient);
 
         System.out.println(gson.toJson(patientList));
